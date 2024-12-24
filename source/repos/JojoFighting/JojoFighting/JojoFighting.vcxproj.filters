@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Entity">
+      <UniqueIdentifier>{93a995a1-993f-416c-ac47-90dcb00f7fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Module">
+      <UniqueIdentifier>{7bdc72a7-acf3-403b-a18f-c87e187daace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Drawable">
+      <UniqueIdentifier>{4a36f8ce-92ad-4e6c-a3e3-3f0779686d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Events">
+      <UniqueIdentifier>{d5e30c47-9126-4c63-a22d-82d23efa493a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Entity\Game">
+      <UniqueIdentifier>{9c61b446-3028-4d81-a6db-96d9bf13c4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Drawable\Components">
+      <UniqueIdentifier>{345ba6f8-06d9-4ed0-bbef-623a9b1b1232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Entity\Game\Audio">
+      <UniqueIdentifier>{4743db61-2d3b-4da7-872a-a3563638553d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity">
+      <UniqueIdentifier>{0c561098-db28-4efb-8e1f-3fbef21ef38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity\Character">
+      <UniqueIdentifier>{d1040540-8256-408b-9474-fd2936d7af05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity\Stand">
+      <UniqueIdentifier>{71255b11-c718-4de3-8896-3271656abd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity\Game">
+      <UniqueIdentifier>{9eea48b8-2999-48ff-bdbc-4e44f70249f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity\Game\Audio">
+      <UniqueIdentifier>{cd7fc379-4222-409e-8ccb-7624e5a76d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Entity\Support">
+      <UniqueIdentifier>{e6e3950b-0fbd-4b0c-8e9b-7bbb7b30cd12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Types">
+      <UniqueIdentifier>{c9eb85c1-4c5a-4aa6-a1dc-4118babe9446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Types\Action">
+      <UniqueIdentifier>{8a380884-ce87-4759-8682-4f7bc8c6381e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Events">
+      <UniqueIdentifier>{fd6b6d22-c191-4679-8e2c-f212c1d057e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Module">
+      <UniqueIdentifier>{4fd4fa80-46f5-4e5f-8543-c9639cdccf99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Drawable">
+      <UniqueIdentifier>{ae7b948e-9e12-4096-9b7c-255c775385b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Файлы заголовков\Drawable\Components">
+      <UniqueIdentifier>{46c4995c-727f-4d16-9c55-edb531bea2ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="JojoFightingMain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Body.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Исходные файлы\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="StandActionMap.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="UseCaseAction.cpp">
+      <Filter>Исходные файлы\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTexturesMap.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Stand.cpp">
+      <Filter>Исходные файлы\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="PollEvent.cpp">
+      <Filter>Исходные файлы\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Исходные файлы\Entity\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы\Entity\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterCard.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterCard.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="StartGameButton.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBarCharacter.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBarCharacter.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Support.cpp">
+      <Filter>Исходные файлы\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Исходные файлы\Entity\Game\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="StopTimeEffect.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerComponent.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="UltComponent.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Knife.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JojoFightingMain.h">
+      <Filter>Исходные файлы\Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Stand.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Stand</Filter>
+    </ClInclude>
+    <ClInclude Include="StandType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Stand</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterActionMap.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UserType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEvent.h">
+      <Filter>Исходные файлы\Файлы заголовков\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="UseCaseAction.h">
+      <Filter>Исходные файлы\Файлы заголовков\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionPathMap.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="PollEvent.h">
+      <Filter>Исходные файлы\Файлы заголовков\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuUserEvent.h">
+      <Filter>Исходные файлы\Файлы заголовков\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuElement.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="StartGameButton.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Support.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SupportType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMapSounds.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioState.h">
+      <Filter>Исходные файлы\Файлы заголовков\Entity\Game\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="StopTimeEffect.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectProgressType.h">
+      <Filter>Исходные файлы\Файлы заголовков\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerComponent.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="UltComponent.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Knife.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
