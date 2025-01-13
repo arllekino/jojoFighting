@@ -12,6 +12,7 @@
 #include "HealthBarCharacter.h"
 #include "TimerComponent.h"
 #include "UltComponent.h"
+#include "FinishHim.h"
 
 class Drawable
 {
@@ -27,7 +28,8 @@ public:
 		std::unordered_map<UserType, Character*> characters,
 		std::unordered_map<UserType, HealthBarCharacter*> healthBars,
 		std::unordered_map<UserType, UltComponent*> ultProgressBars,
-		TimerComponent* timer
+		TimerComponent* timer,
+		FinishHim* finishHimText
 	);
 
 private:

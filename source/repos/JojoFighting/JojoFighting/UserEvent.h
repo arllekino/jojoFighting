@@ -17,5 +17,6 @@ enum UserEvent
 	ult,
 	onSupportCall,
 	ridicule,
+	onMegaUlt,
 	none
 };

@@ -12,7 +12,7 @@ HealthBarCharacter::HealthBarCharacter(sf::Vector2f position, int xScale)
 	wrapper.setSize(rectSize);
 	wrapper.setPosition(position);
 	wrapper.setScale(xScale, 1);
-	wrapper.setOutlineThickness(5);
+	wrapper.setOutlineThickness(2);
 	wrapper.setFillColor(sf::Color(0, 0, 0, 256));
 	wrapper.setOutlineColor(sf::Color(246, 207, 49));
 }

@@ -1,378 +1,237 @@
-﻿  ActionTexturesMap.h
-  AudioManager.cpp
-  AudioManager.h
-  HealthBarCharacter.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\HealthBarCharacter.cpp(10,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\HealthBarCharacter.cpp(14,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\HealthBarCharacter.cpp(16,42): warning C4305: аргумент: усечение из "int" в "sf::Uint8"
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\HealthBarCharacter.cpp(16,42): warning C4309: аргумент: усечение константного значения
-  HealthBarCharacter.h
-  Character.cpp
+﻿  Character.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
 C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(46,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(184,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(206,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(232,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(264,30): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(267,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(302,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(317,64): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(317,64): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(317,64): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(317,64): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(317,64): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(365,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(367,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(385,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(387,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(411,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(413,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(539,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(570,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(572,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(661,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(666,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(680,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(683,45): warning C4244:         ]
-  Body.h
-  CharacterCard.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,50): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\CharacterCard.cpp(51,37): warning C4244:         ]
-  CharacterCard.h
-  Drawable.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,78): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,78): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,78): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,78): warning C4244:             T=int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,78): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,58): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,58): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,58): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,58): warning C4244:             T=int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Drawable.cpp(135,58): warning C4244:         ]
-  Game.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(40,61): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Game.cpp(52,117): warning C4244:         ]
-  Game.h
-  Knife.cpp
-  StartGameButton.cpp
-  StopTimeEffect.cpp
-  Support.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(108,11): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(108,11): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(108,11): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(108,11): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(108,11): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(109,11): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(109,11): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(109,11): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(109,11): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(109,11): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(110,11): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(110,11): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(110,11): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(110,11): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(110,11): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(111,11): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(111,11): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(111,11): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(111,11): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(111,11): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,53): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,53): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,53): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,53): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,53): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,40): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,40): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,40): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(121,40): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(164,23): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(195,83): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(195,83): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(195,83): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(195,83): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Support.cpp(195,83): warning C4244:         ]
-  TimerComponent.cpp
-  UltComponent.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\UltComponent.cpp(10,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\UltComponent.cpp(15,17): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  UseCaseAction.cpp
-  PollEvent.cpp
-  Создание кода...
-  Компиляция...
-  Stand.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(49,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(64,67): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(64,67): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(64,67): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(64,67): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(64,67): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,56): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         with
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:             T=unsigned int
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         and
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         [
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:             T=float
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(79,45): warning C4244:         ]
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\Stand.cpp(100,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(229,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,57): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(254,46): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(281,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(313,30): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(316,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(351,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(366,64): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(366,64): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(366,64): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(366,64): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(366,64): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(423,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(425,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(443,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(445,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(469,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(471,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(607,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(638,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(640,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(730,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(735,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(752,17): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(755,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,56): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         with
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:             T=unsigned int
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         ]
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         and
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         [
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:             T=float
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\Character.cpp(793,45): warning C4244:         ]
   TextureManager.cpp
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\TextureManager.cpp(200,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\arl\source\repos\JojoFighting\JojoFighting\TextureManager.cpp(203,21): warning C4018: <: несоответствие типов со знаком и без знака
-  JojoFightingMain.cpp
-  main.cpp
-  StandActionMap.h
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\TextureManager.cpp(284,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\arl\source\repos\JojoFighting\JojoFighting\TextureManager.cpp(287,21): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
-x64\Debug\AudioManager.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
-x64\Debug\HealthBarCharacter.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
-x64\Debug\CharacterCard.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
-x64\Debug\Game.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
   JojoFighting.vcxproj -> C:\Users\arl\source\repos\JojoFighting\x64\Debug\JojoFighting.exe

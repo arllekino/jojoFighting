@@ -3,10 +3,11 @@
 #include <SFML/Graphics.hpp>
 #include "UserType.h"
 
-CharacterCard::CharacterCard(CharacterType characterType, std::string path, std::string placeholderText)
+
+CharacterCard::CharacterCard(CharacterType characterType, std::string path, std::string placeholderText, sf::Color backgroundColorMask)
 {
 	this->characterType = characterType;
-	setTextureByPath(path, scale);
+	setTextureByPath(path, scale, backgroundColorMask);
 	font.loadFromFile("assets/game/fonts/Bangers-Regular.ttf");
 	text.setFont(font);
 	text.setString(placeholderText);
@@ -17,7 +18,7 @@ CharacterCard::CharacterCard(CharacterType characterType, std::string path, std:
 CharacterCard::CharacterCard(SupportType supportType, std::string path, std::string placeholderText)
 {
 	this->supportType = supportType;
-	setTextureByPath(path, 1.f);
+	setTextureByPath(path, 1.f, sf::Color(255, 255, 255));
 	rect.setSize(supportCardSize);
 	font.loadFromFile("assets/game/fonts/Bangers-Regular.ttf");
 	text.setFont(font);
@@ -34,7 +35,7 @@ sf::Vector2f CharacterCard::getSize()
 	return rect.getSize();
 }
 
-void CharacterCard::setTextureByPath(std::string path, float cardScale)
+void CharacterCard::setTextureByPath(std::string path, float cardScale, sf::Color colorMask)
 {
 	sf::Texture localTexture;
 
@@ -44,7 +45,7 @@ void CharacterCard::setTextureByPath(std::string path, float cardScale)
 	}
 
 	sf::Image image = localTexture.copyToImage();
-	image.createMaskFromColor(sf::Color(128, 128, 255));
+	image.createMaskFromColor(colorMask);
 
 	auto imageSize = image.getSize();
 
@@ -90,7 +91,7 @@ void CharacterCard::makeCardHovered()
 {
 	if (selected)
 		return;
-	
+
 	text.setFillColor(sf::Color::Yellow);
 }
 
@@ -110,6 +111,8 @@ std::string CharacterCard::getCharacterTypeString()
 		return "Jotaro";
 	case dio:
 		return "Dio";
+	case joseph:
+		return "Joseph";
 	default:
 		break;
 	}

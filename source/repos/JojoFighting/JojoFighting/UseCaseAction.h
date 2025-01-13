@@ -18,13 +18,14 @@
 #include "StartGameButton.h"
 #include "HealthBarCharacter.h"
 #include "UltComponent.h"
+#include "FinishHim.h"
 
 class Game;
 
 class UseCaseAction
 {
 public:
-	UseCaseAction(sf::Vector2u windowSize, AudioManager* audioManager);
+	UseCaseAction(sf::Vector2u windowSize, AudioManager* audioManager, TextureManager* textureManager);
 	~UseCaseAction();
 
 	void processGame(
@@ -33,6 +34,7 @@ public:
 		std::unordered_map<UserType, Character*> characters,
 		std::unordered_map<UserType, HealthBarCharacter*> healthBars,
 		std::unordered_map<UserType, UltComponent*> ultProgressBars,
+		FinishHim* finishHimBlock,
 		sf::Vector2u windowSize
 	);
 	void menu(
@@ -53,6 +55,8 @@ private:
 	TextureManager* textureManager;
 	sf::Vector2u windowSize;
 	AudioManager* audioManager;
+
+	sf::Clock characterDeadClock;
 
 	StandType getStandTypeByCharacterType(CharacterType type);
 	void onAction(std::unordered_map<UserType, Character*> characters, UserType currentUser, UserType otherUser, ActionType action, int direction, sf::Vector2u windowSize, std::unordered_map<UserType, UltComponent*> ultProgressBars);

@@ -5,7 +5,7 @@ UltComponent::UltComponent(sf::Vector2f startPos, int direction)
 	wrapper.setPosition(startPos);
 	wrapper.setSize(startSize);
 	wrapper.setFillColor(sf::Color(0, 0, 0, 0));
-	wrapper.setOutlineThickness(2);
+	wrapper.setOutlineThickness(1);
 	wrapper.setOutlineColor(sf::Color::White);
 	wrapper.setScale(direction, 1);
 
@@ -35,7 +35,7 @@ void UltComponent::check(float readiness)
 
 	shape.setSize({ startSize.x * scale, startSize.y });
 	if (scale >= 1)
-		shape.setFillColor(sf::Color::Green);
+		shape.setFillColor(sf::Color(128, 128, 255));
 	else
 		shape.setFillColor(sf::Color::Red);
 }

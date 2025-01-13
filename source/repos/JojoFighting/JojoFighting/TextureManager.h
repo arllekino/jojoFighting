@@ -28,6 +28,9 @@ public:
 	std::vector<sf::Texture> getSupportTexture(SupportType supportType);
 
 private:
+	const sf::Color blueColorMask = sf::Color(128, 128, 255);
+	const sf::Color greenColorMask = sf::Color(0, 126, 113);
+
 	CharacterActionMap characterSpritesPaths;
 	StandActionMap standSpritesPaths;
 	std::unordered_map<SupportType, std::string> supportSptirePath;
@@ -42,7 +45,7 @@ private:
 	void initStandsTexturesFromSprites();
 	void initSupportSpites();
 	void initSupportTextures();
-	void addStandTexturesByPath(StandType standType, ActionType actionType, std::string path);
-
-	std::vector<sf::Texture> setTexturesByImagePath(std::string path);
+	void addStandTexturesByPath(StandType standType, ActionType actionType, std::string path, sf::Color colorMask);
+	void addCharacterTexturesByPath(CharacterType characterType, ActionType actionType, std::string path, sf::Color colorMask);
+	std::vector<sf::Texture> setTexturesByImagePath(std::string path, sf::Color colorMask);
 };

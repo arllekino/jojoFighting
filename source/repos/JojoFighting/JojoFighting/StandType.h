@@ -4,5 +4,6 @@ enum StandType
 {
 	starPlatinum,
 	theWorld,
+	hermitPurple,
 	noneStand
 };

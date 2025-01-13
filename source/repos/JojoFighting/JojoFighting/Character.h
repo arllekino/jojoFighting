@@ -19,6 +19,7 @@
 #include "Support.h"
 #include "StopTimeEffect.h"
 #include "UltComponent.h"
+#include "Avatar.h"
 
 class Support;
 class Stand;
@@ -32,17 +33,23 @@ public:
 	Body getBody();
 	int getHp();
 	sf::Vector2f getPosition();
+	sf::Vector2f getSize();
 	CharacterType getCharacterType();
 	bool isPunchGoing();
 	bool isCharacterHitedNow();
 	bool isSupportCalled();
 	bool isEffectInProgress();
 	bool isTimeStoppedMethod();
+	bool isStandVisible();
+	bool isDeadMethod();
 	int getMaxHp();
 	sf::RectangleShape getSupportAsRect();
 	std::vector<sf::CircleShape> getSupportAbility();
 	sf::CircleShape getEffect();
+	sf::RectangleShape getAvatar();
 	float getUltReadiness();
+
+	sf::RectangleShape getStandAsShape();
 
 	void checkAction(ActionType type, int direction, Character* opponent);
 	void onGoing(float direction, sf::Vector2u fieldSize);
@@ -52,14 +59,18 @@ public:
 	void onCrouch(ActionType action);
 	void onStay();
 	void onSummonStand(ActionType action);
-	void onUlt(ActionType action, Character* otherCharacter, UltComponent* ultProgressBar);
+	void onUlt(Character* otherCharacter, UltComponent* ultProgressBar);
 	void getUlted(CharacterType byWho);
 	void onCallSupport();
 	void onHaha(ActionType action);
+	void makeStunned();
+	void makeUnstunned();
+	void setPositionX(float newPosX);
 
 private:
 	const float scaleToWindow = 3.3f;
 	const int maxHp = 1000;
+	const float deltaY = 50;
 	const float punchSpeed = 20;
 	const float summonSpeed = 20;
 	const float moveSpeed = 10;
@@ -70,6 +81,7 @@ private:
 	const sf::Vector2f deadPosition = { -5000, 5000 };
 	const sf::Time freezeDuration = sf::seconds(10);
 	const sf::Time ultCoolDown = sf::seconds(20);
+	const sf::Time atDeathCoolDown = sf::seconds(3);
 
 	sf::Vector2u windowSize;
 
@@ -85,6 +97,7 @@ private:
 	ActionType currentAction;
 	std::unordered_map<ActionType, sf::Sound> sounds;
 	StopTimeEffect* effect;
+	Avatar* avatar;
 
 	AudioManager* audioManager;
 
@@ -94,6 +107,9 @@ private:
 	bool isSoundPlaying = false;
 	bool isJump = false;
 	bool isAtDeath = false;
+	bool isStunned = false;
+	bool isWon = false;
+	bool isDead = false;
 
 	StandType dependenceFromEnemy;
 	bool isTimeStopped = false;
@@ -102,6 +118,7 @@ private:
 
 	sf::Vector2f jumpStartPos;
 	sf::Clock jumpClock;
+	sf::Clock atDeathClock;
 
 	void stopTime();
 	void updateTimeState();
@@ -111,4 +128,6 @@ private:
 	void setHitTexture();
 	void checkSound();
 	void deadAction();
+	void setWinAction();
+	sf::Vector2f getAvatarPosByUserType(sf::Vector2u windowSize, UserType userType);
 };

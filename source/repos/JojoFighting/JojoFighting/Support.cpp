@@ -1,6 +1,7 @@
 #include "Support.h"
 
 #include <random>
+#include <iostream>
 
 #include "SupportType.h"
 #include "TextureManager.h"
@@ -44,8 +45,10 @@ void Support::onCallSupport()
 
 void Support::checkSupport(Character* whosOnPunch)
 {
-	if (clock.getElapsedTime() > callTime)
+	if (clock.getElapsedTime() > callTime) {
 		isSupportVisible = false;
+		return;
+	}
 
 	float speed = 1.f;
 
@@ -66,11 +69,11 @@ void Support::checkSupport(Character* whosOnPunch)
 
 	checkCollission(whosOnPunch);
 
-	for (size_t i = 0; i < ability.size(); i++)
+	for (auto& item : ability)
 	{
-		auto prevPos = ability[i].getPosition();
+		auto prevPos = item.getPosition();
 		auto direction = supportRect.getScale().x;
-		ability[i].setPosition(prevPos.x + direction * speed, prevPos.y);
+		item.setPosition(prevPos.x + direction * speed, prevPos.y);
 	}
 }
 
@@ -159,8 +162,6 @@ void Support::setSupportTexturesPos(sf::Vector2f size, sf::Vector2f position, in
 {
 	supportRect.setSize(size);
 	supportRect.setPosition(position);
-	supportRect.setOutlineColor(sf::Color::White);
-	supportRect.setOutlineThickness(1);
 	supportRect.setScale(xDirection, 1);
 	if (supportTextures.size() == 0)
 	{
@@ -171,33 +172,35 @@ void Support::setSupportTexturesPos(sf::Vector2f size, sf::Vector2f position, in
 
 void Support::checkCollission(Character* character)
 {
-	int deltaHp = 1;
+	int damageAmount = 1;
+
 	switch (supportType)
 	{
 	case kakyoin:
-		deltaHp = 1;
+		damageAmount = 1;
 		break;
 	case josuke:
-		deltaHp = -250;
+		damageAmount = -250;
 		break;
 	case kira:
-		deltaHp = 250;
+		damageAmount = 250;
 		break;
 	default:
 		break;
 	}
 
-	for (size_t i = 0; i < ability.size();)
+	for (auto it = ability.begin(); it != ability.end();)
 	{
-		if (ability[i].getGlobalBounds().intersects(character->getBody().bodyShape.getGlobalBounds()))
+		if (it->getGlobalBounds().intersects(character->getBody().bodyShape.getGlobalBounds()))
 		{
-			if (!character->isPunchGoing())
-				character->takeDamage(ActionType::onHitedTorsoStraight, supportRect.getScale().x, deltaHp);
-			ability.erase(ability.begin() + i);
+			if (!character->isPunchGoing()) {
+				character->takeDamage(ActionType::onHitedTorsoStraight, supportRect.getScale().x, damageAmount);
+				it = ability.erase(it);
+			}
 		}
 		else
 		{
-			++i;
+			++it;
 		}
 	}
 }

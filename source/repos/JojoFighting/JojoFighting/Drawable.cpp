@@ -5,6 +5,8 @@
 #include "HealthBarCharacter.h"
 #include "TimerComponent.h"
 
+#include <iostream>
+
 Drawable::Drawable()
 {
 }
@@ -20,7 +22,8 @@ void Drawable::drawGame(
 	std::unordered_map<UserType, Character*> characters,
 	std::unordered_map<UserType, HealthBarCharacter*> healthBars,
 	std::unordered_map<UserType, UltComponent*> ultProgressBars,
-	TimerComponent* timer
+	TimerComponent* timer,
+	FinishHim* finishHimText
 )
 {
 	toCoverBackground(background, window.getSize());
@@ -29,7 +32,7 @@ void Drawable::drawGame(
 
 	window.clear();
 	window.draw(background);
-	
+
 	window.draw(timer->getTimerAsShape());
 	window.draw(timer->getTimeAsText());
 
@@ -56,11 +59,18 @@ void Drawable::drawGame(
 	if (secondBody.isDrawable)
 		window.draw(secondBody.bodyShape);
 
+	if (characters[firstUser]->isStandVisible())
+		window.draw(characters[firstUser]->getStandAsShape());
+
+	if (characters[secondUser]->isStandVisible())
+		window.draw(characters[secondUser]->getStandAsShape());
+
 	if (characters[firstUser]->isEffectInProgress())
 		window.draw(characters[firstUser]->getEffect());
 
 	if (characters[secondUser]->isEffectInProgress())
 		window.draw(characters[secondUser]->getEffect());
+
 
 	window.draw(healthBars[firstUser]->getHealthBarAsRect());
 	window.draw(healthBars[firstUser]->getWrapperAsRect());
@@ -72,6 +82,14 @@ void Drawable::drawGame(
 	window.draw(ultProgressBars[secondUser]->getAsShape());
 	window.draw(ultProgressBars[secondUser]->getWrapperAsShape());
 
+	window.draw(characters[firstUser]->getAvatar());
+	window.draw(characters[secondUser]->getAvatar());
+
+	if (characters[firstUser]->getHp() <= 0 || characters[secondUser]->getHp() <= 0)
+	{
+		window.draw(finishHimText->getText());
+	}
+
 	window.display();
 }
 
@@ -82,7 +100,7 @@ void Drawable::drawMenu(sf::RenderWindow& window, sf::Sprite& background, std::v
 	window.clear();
 	window.draw(background);
 
-	for (auto& card	: cards)
+	for (auto& card : cards)
 	{
 		window.draw(card->getCardAsRect());
 		window.draw(card->getPlaceholderText());
@@ -139,8 +157,12 @@ void Drawable::toCoverBackground(sf::Sprite& background, sf::Vector2u windowSize
 
 void Drawable::drawAbility(sf::RenderWindow& window, std::vector<sf::CircleShape> ability)
 {
-	for (size_t i = 0; i < ability.size(); i++)
+	if (ability.empty()) {
+		return;
+	}
+
+	for (auto& item : ability)
 	{
-		window.draw(ability[i]);
+		window.draw(item);
 	}
 }

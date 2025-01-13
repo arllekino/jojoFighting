@@ -22,24 +22,29 @@ Game::Game(sf::Vector2u windowSize)
     drawable = new Drawable{};
     textureManager = new TextureManager();
     audioManager = new AudioManager();
-    useCaseAction = new UseCaseAction(windowSize, audioManager);
+    useCaseAction = new UseCaseAction(windowSize, audioManager, textureManager);
 
     users[firstUser] = UserEvent::none;
     users[secondUser] = UserEvent::none;
 
-    cards.push_back(new CharacterCard(CharacterType::jotaro, "assets/jotaro/JotaroPreviewCard.png", "Jotaro"));
-    cards.push_back(new CharacterCard(CharacterType::dio, "assets/dio/DioPreviewCard.png", "Dio"));
-    
+    cards.push_back(new CharacterCard(CharacterType::jotaro, "assets/jotaro/JotaroPreviewCard.png", "Jotaro", sf::Color(128, 128, 255)));
+    cards.push_back(new CharacterCard(CharacterType::dio, "assets/dio/DioPreviewCard.png", "Dio", sf::Color(128, 128, 255)));
+    cards.push_back(new CharacterCard(CharacterType::joseph, "assets/joseph/JosephPreviewCard.png", "Joseph", sf::Color(0, 126, 113)));
+
     supportCards.push_back(new CharacterCard(SupportType::josuke, "assets/josuke/preview.png", "Josuke"));
     supportCards.push_back(new CharacterCard(SupportType::kakyoin, "assets/kakyoin/preview.png", "Kakyoin"));
     supportCards.push_back(new CharacterCard(SupportType::kira, "assets/kira/preview.png", "Kira Yoshikage"));
 
     startGameButton = new StartGameButton();
+    
+    float gap = 100;
+    sf::Vector2f newPosFor0 = sf::Vector2f(windowSize.x / 2 - cards[0]->getSize().x - cards[1]->getSize().x / 2 - gap, (windowSize.y - cards[0]->getSize().y) / 4);
+    sf::Vector2f newPosFor1 = sf::Vector2f(windowSize.x / 2 - cards[1]->getSize().x / 2, (windowSize.y - cards[1]->getSize().y) / 4);
+    sf::Vector2f newPosFor2 = sf::Vector2f(windowSize.x / 2 + cards[1]->getSize().x / 2 + gap, (windowSize.y - cards[1]->getSize().y) / 4);
 
-    sf::Vector2f newPosFor0 = sf::Vector2f(windowSize.x / 2 - cards[0]->getSize().x - 250, (windowSize.y - cards[0]->getSize().y) / 4);
-    sf::Vector2f newPosFor1 = sf::Vector2f(windowSize.x / 2 + 200, (windowSize.y - cards[1]->getSize().y) / 4);
     cards[0]->setPosition(newPosFor0);
     cards[1]->setPosition(newPosFor1);
+    cards[2]->setPosition(newPosFor2);
 
     auto newPosForSupportCard0 = sf::Vector2f(windowSize.x / 2 - 2 * supportCards[0]->getSize().x - 200, (windowSize.y - supportCards[0]->getSize().y) * 3 / 4);
     auto newPosForSupportCard1 = sf::Vector2f(windowSize.x / 2 - supportCards[1]->getSize().x / 2, (windowSize.y - supportCards[1]->getSize().y) * 3 / 4);
@@ -52,16 +57,23 @@ Game::Game(sf::Vector2u windowSize)
     sf::Vector2f newPosForButton = sf::Vector2f((windowSize.x - startGameButton->getSize().x) / 2, 5 * windowSize.y / 6);
     startGameButton->setPosition(newPosForButton);
 
-    healthBars[firstUser] = new HealthBarCharacter(sf::Vector2f(0 + windowPadding, windowPadding), 1);
-    healthBars[secondUser] = new HealthBarCharacter(sf::Vector2f(windowSize.x - windowPadding, windowPadding), -1);
+    healthBars[firstUser] = new HealthBarCharacter(sf::Vector2f(0 + windowPadding, windowPadding / 6), 1);
+    healthBars[secondUser] = new HealthBarCharacter(sf::Vector2f(windowSize.x - windowPadding, windowPadding / 6), -1);
     
-    ultProgressBars[firstUser] = new UltComponent(sf::Vector2f(0 + windowPadding, windowSize.y - windowPadding), 1);
-    ultProgressBars[secondUser] = new UltComponent(sf::Vector2f(windowSize.x - windowPadding, windowSize.y - windowPadding), -1);
+    ultProgressBars[firstUser] = new UltComponent(sf::Vector2f(0 + windowPadding, 1.7 * windowPadding / 6), 1);
+    ultProgressBars[secondUser] = new UltComponent(sf::Vector2f(windowSize.x - windowPadding, 1.7 * windowPadding / 6), -1);
 
     timerComponent = new TimerComponent(windowSize);
 
     backgroundTexture.loadFromFile(menuBackgroundPath);
     backgroundSprite.setTexture(backgroundTexture);
+
+    chosedCharacters[firstUser] = noneCharacter;
+    chosedCharacters[secondUser] = noneCharacter;
+    chosedSupports[firstUser] = noneSupport;
+    chosedSupports[secondUser] = noneSupport;
+
+    finishHimText = new FinishHim(windowSize);
 
     setGameState(GameState::menu);
     unselectAll();
@@ -100,6 +112,8 @@ Game::~Game()
     {
         delete ultComponent.second;
     }
+
+    delete finishHimText;
 
     cards.clear();
 }
@@ -158,11 +172,11 @@ void Game::main(sf::RenderWindow& window)
 {
     pollEvent->onEventGame(window, users);
 
-    useCaseAction->processGame(this, users, characters, healthBars, ultProgressBars, window.getSize());
+    useCaseAction->processGame(this, users, characters, healthBars, ultProgressBars, finishHimText, window.getSize());
     if (gameState != game)
         return;
 
-    drawable->drawGame(window, backgroundSprite, users, characters, healthBars, ultProgressBars, timerComponent);
+    drawable->drawGame(window, backgroundSprite, users, characters, healthBars, ultProgressBars, timerComponent, finishHimText);
  
     audioManager->playMusic(gameState);
 }

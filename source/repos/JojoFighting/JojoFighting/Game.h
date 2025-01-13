@@ -20,6 +20,7 @@
 #include "AudioManager.h"
 #include "TimerComponent.h"
 #include "UltComponent.h"
+#include "FinishHim.h"
 
 class UseCaseAction;
 
@@ -38,7 +39,7 @@ public:
 	sf::Time getTime();
 
 private:
-	const float windowPadding = 50.f;
+	const float windowPadding = 300.f;
 	const std::string menuBackgroundPath = "assets/game/menuBackground.jpg";
 	const std::string gameBackgroundPath = "assets/game/CairoStreet.jpg";
 
@@ -66,6 +67,8 @@ private:
 
 	std::unordered_map<UserType, SupportType> chosedSupports;
 	std::unordered_map<UserType, CharacterType> chosedCharacters;
+
+	FinishHim* finishHimText;
 
 	void unselectAll();
 };

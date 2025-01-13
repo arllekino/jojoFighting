@@ -136,6 +136,8 @@
     <ClCompile Include="ActionTexturesMap.h" />
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="AudioManager.h" />
+    <ClCompile Include="Avatar.cpp" />
+    <ClCompile Include="FInishHim.cpp" />
     <ClCompile Include="HealthBarCharacter.cpp" />
     <ClCompile Include="HealthBarCharacter.h" />
     <ClCompile Include="Character.cpp" />
@@ -162,11 +164,13 @@
   <ItemGroup>
     <ClInclude Include="ActionPathMap.h" />
     <ClInclude Include="AudioMapSounds.h" />
+    <ClInclude Include="Avatar.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterActionMap.h" />
     <ClInclude Include="CharacterType.h" />
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="EffectProgressType.h" />
+    <ClInclude Include="FinishHim.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Knife.h" />
     <ClInclude Include="MenuElement.h" />

@@ -28,7 +28,7 @@ enum ActionType
 	onOraOra, // obviously
 	onHitedHeadStraight,
 	onHitedHeadDownUp,
-	onHitedHeadUpDown,
+	onHitedHeadUpDown, 
 	onHitedTorsoStraight,
 	onHitedTorsoDownUp,
 	onHitedLegStraight,
@@ -41,4 +41,7 @@ enum ActionType
 	onHaha,
 	onTakeHit,
 	atDeath,
+	onWin,
+	onWinCycle,
+	avatar
 };

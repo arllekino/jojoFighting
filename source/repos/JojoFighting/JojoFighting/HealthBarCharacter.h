@@ -15,7 +15,7 @@ public:
 
 private:
 	const sf::Color rectColor = sf::Color::Green;
-	const sf::Vector2f rectSize = sf::Vector2f(750, 50);
+	const sf::Vector2f rectSize = sf::Vector2f(500, 30);
 	sf::RectangleShape rect;
 	sf::RectangleShape wrapper;
 };

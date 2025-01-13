@@ -13,6 +13,7 @@ Stand::Stand(StandType type, TextureManager* textureManager, Character* owner)
 	this->owner = owner;
 	currentAction = ActionType::onStay;
 	body.bodyShape.setPosition(0.f, 0.f);
+	
 }
 
 Stand::~Stand()
@@ -26,42 +27,59 @@ bool Stand::isStandVisible()
 
 void Stand::onPunch(Character* whosOnPunch)
 {
-	isPunch = true;
 	if (owner->isTimeStoppedMethod())
 		return;
 
-	const int punchDeltaHp = 5;
+	const int punchDeltaHp = getPunchForceByStand();
 
 	auto texturesCount = texturesMap[currentAction].size();
 
 	auto time = clock.getElapsedTime().asSeconds();
 	auto frameLivingTime = static_cast<int>(time * punchSpeed);
 
-	int frameIndex;
-	if (frameLivingTime < texturesCount)
-		frameIndex = frameLivingTime;
-
-	if (frameIndex == texturesCount - 1)
+	int frameIndex = frameLivingTime;
+	if (frameIndex >= texturesCount - 1)
+	{
 		isPunch = false;
+		isVisible = false;
+		whosOnPunch->makeUnstunned();
+	}
 
 	auto position = owner->getPosition();
 	auto newSize = texturesMap[currentAction][frameIndex].getSize();
 	body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
-	body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
+	body.bodyShape.setPosition(position.x, position.y);
 	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
 
 	auto bodyShapeProps = body.bodyShape.getGlobalBounds();
-	body.punchShape.setSize(sf::Vector2f(50, bodyShapeProps.height));
+	auto punchShapeSize = standType == hermitPurple ? 700 : 50;
+
+	body.punchShape.setSize(sf::Vector2f(punchShapeSize, bodyShapeProps.height));
 	body.punchShape.setFillColor(sf::Color::Green);
 
 	auto directionX = body.bodyShape.getScale().x;
 	if (directionX > 0)
-		body.punchShape.setPosition(bodyShapeProps.left + bodyShapeProps.width - 50, bodyShapeProps.top);
+		body.punchShape.setPosition(bodyShapeProps.left + bodyShapeProps.width - punchShapeSize, bodyShapeProps.top);
 	else
 		body.punchShape.setPosition(bodyShapeProps.left, bodyShapeProps.top);
 
 	if (body.punchShape.getGlobalBounds().intersects(whosOnPunch->getBody().bodyShape.getGlobalBounds()))
+	{
+		if (standType == hermitPurple)
+		{
+			auto whosOnPunchSize = whosOnPunch->getSize();
+			auto newPosX = body.bodyShape.getGlobalBounds().left + body.bodyShape.getGlobalBounds().width - whosOnPunchSize.x;
+			whosOnPunch->setPositionX(newPosX);
+		}
+
 		whosOnPunch->takeDamage(currentAction, body.bodyShape.getScale().x, punchDeltaHp);
+		whosOnPunch->makeStunned();
+	}
+	else
+	{
+		whosOnPunch->makeUnstunned();
+
+	}
 }
 
 void Stand::setVisibility(bool visibility)
@@ -73,7 +91,7 @@ void Stand::setVisibility(bool visibility)
 		return;
 
 	int frameIndex = static_cast<int>(clock.getElapsedTime().asSeconds() * 10) % texturesCount;
-	auto newSize = texturesMap[currentAction][0].getSize();
+	auto newSize = texturesMap[currentAction][frameIndex].getSize();
 
 	auto position = owner->getPosition();
 	body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
@@ -103,12 +121,36 @@ void Stand::checkAction(ActionType type, int direction)
 
 void Stand::makePunches()
 {
+	if (isPunch)
+		return;
+
 	isVisible = true;
 	isPunch = true;
+	clock.restart();
 }
 
 void Stand::setOpponent(Character* opponent)
 {
 	if (this->opponent == nullptr)
 		this->opponent = opponent;
+}
+
+sf::RectangleShape Stand::getAsShape()
+{
+	return body.bodyShape;
+}
+
+int Stand::getPunchForceByStand()
+{
+	switch (standType)
+	{
+	case starPlatinum:
+		return 5;
+	case theWorld:
+		return 5;
+	case hermitPurple:
+		return 10;
+	default:
+		break;
+	}
 }

@@ -13,15 +13,16 @@
 #include "TextureManager.h"
 #include "MenuElement.h"
 
-UseCaseAction::UseCaseAction(sf::Vector2u windowSize, AudioManager* audioManager)
+UseCaseAction::UseCaseAction(sf::Vector2u windowSize, AudioManager* audioManager, TextureManager* textureManager)
 {
 	this->windowSize = windowSize;
 
-	textureManager = new TextureManager();
+	this->textureManager = textureManager;
 	this->audioManager = audioManager;
 
 	menuElements.push_back(MenuElement::elementJotaro);
 	menuElements.push_back(MenuElement::elementDio);
+	menuElements.push_back(MenuElement::elementJoseph);
 	menuElements.push_back(MenuElement::elementJosuke);
 	menuElements.push_back(MenuElement::elementKakyoin);
 	menuElements.push_back(MenuElement::elementKira);
@@ -33,7 +34,6 @@ UseCaseAction::UseCaseAction(sf::Vector2u windowSize, AudioManager* audioManager
 
 UseCaseAction::~UseCaseAction()
 {
-	delete textureManager;
 }
 
 void UseCaseAction::menu(
@@ -75,7 +75,7 @@ void UseCaseAction::menu(
 			}
 			else
 				cards[0]->makeCardUnselected();
-		
+
 		if (menuElements[menuCurrentElementPos] == elementDio)
 			if (chosedCharacters[firstUser] != noneCharacter)
 			{
@@ -84,6 +84,15 @@ void UseCaseAction::menu(
 			}
 			else
 				cards[1]->makeCardUnselected();
+
+		if (menuElements[menuCurrentElementPos] == elementJoseph)
+			if (chosedCharacters[firstUser] != noneCharacter)
+			{
+				cards[2]->makeCardSelected(UserType::firstUser);
+				audioManager->playMenuSound(menuUserEvent);
+			}
+			else
+				cards[2]->makeCardUnselected();
 
 		if (menuElements[menuCurrentElementPos] == elementJosuke)
 			if (chosedSupports[firstUser] != noneSupport)
@@ -131,6 +140,15 @@ void UseCaseAction::menu(
 			}
 			else
 				cards[1]->makeCardUnselected();
+
+		if (menuElements[menuCurrentElementPos] == elementJoseph)
+			if (chosedCharacters[secondUser] != noneCharacter)
+			{
+				cards[2]->makeCardSelected(UserType::secondUser);
+				audioManager->playMenuSound(menuUserEvent);
+			}
+			else
+				cards[2]->makeCardUnselected();
 
 		if (menuElements[menuCurrentElementPos] == elementJosuke)
 			if (chosedSupports[secondUser] != noneSupport)
@@ -217,10 +235,14 @@ void UseCaseAction::processGame(
 	std::unordered_map<UserType, Character*> characters,
 	std::unordered_map<UserType, HealthBarCharacter*> healthBars,
 	std::unordered_map<UserType, UltComponent*> ultProgressBars,
+	FinishHim* finishHimBlock,
 	sf::Vector2u windowSize
 )
 {
-	if (game->getTime().asSeconds() < 0)
+	if (!characters[firstUser]->isDeadMethod() && !characters[secondUser]->isDeadMethod())
+		characterDeadClock.restart();
+
+	if (game->getTime().asSeconds() < 0 || characterDeadClock.getElapsedTime().asSeconds() > 20)
 	{
 		game->setGameState(GameState::menu);
 		return;
@@ -240,6 +262,15 @@ void UseCaseAction::processGame(
 	checkCharacterHp(characters[secondUser], healthBars[secondUser]);
 	onAction(characters, secondUser, firstUser, secondUserAction, secondUserDirection, windowSize, ultProgressBars);
 	ultProgressBars[secondUser]->check(characters[secondUser]->getUltReadiness());
+
+	if (characters[firstUser]->isDeadMethod())
+	{
+		finishHimBlock->setText("Second user WON");
+	}
+	if (characters[secondUser]->isDeadMethod())
+	{
+		finishHimBlock->setText("First user WON");
+	}
 }
 
 int UseCaseAction::getCurrentMenuElementPos()
@@ -260,7 +291,7 @@ ActionType UseCaseAction::getActionByUserEvent(UserEvent userEvent)
 		userAction = ActionType::onGoing;
 		break;
 	case onUp:
-	case onUpRight: 
+	case onUpRight:
 	case onUpLeft:
 		userAction = ActionType::onJump;
 		break;
@@ -296,6 +327,9 @@ ActionType UseCaseAction::getActionByUserEvent(UserEvent userEvent)
 		break;
 	case ridicule:
 		userAction = ActionType::onHaha;
+		break;
+	case onMegaUlt:
+		userAction = ActionType::onOraOra;
 		break;
 	default:
 		userAction = ActionType::onStay;
@@ -341,20 +375,10 @@ void UseCaseAction::onAction(
 
 	if (action == ActionType::onGoing)
 		characters[currentUser]->onGoing(float(direction), windowSize);
-	if (action == ActionType::onArmMediumAttack
-		|| action == ActionType::onStandAttackUp
-		|| action == ActionType::onCrouchAttackForward
-		|| action == ActionType::onCrouchPowerfulAttackForward
-		|| action == ActionType::onStandAttackDown
-		) {
-		characters[currentUser]->onPunch(action, characters[otherUser]);
-	}
 	if (action == ActionType::onCrouch)
 		characters[currentUser]->onCrouch(action);
-	if (action == ActionType::onSummon)
-		characters[currentUser]->onSummonStand(action);
 	if (action == ActionType::onUlt)
-		characters[currentUser]->onUlt(action, characters[otherUser], ultProgressBars[currentUser]);
+		characters[currentUser]->onUlt(characters[otherUser], ultProgressBars[currentUser]);
 	if (action == ActionType::onCallSupport)
 		characters[currentUser]->onCallSupport();
 	if (action == ActionType::onHaha)
@@ -384,6 +408,12 @@ void UseCaseAction::onChooseElement(
 	case elementDio:
 		if (chosedCharacters[user] == noneCharacter)
 			chosedCharacters[user] = dio;
+		else
+			chosedCharacters[user] = noneCharacter;
+		break;
+	case elementJoseph:
+		if (chosedCharacters[user] == noneCharacter)
+			chosedCharacters[user] = joseph;
 		else
 			chosedCharacters[user] = noneCharacter;
 		break;
@@ -464,11 +494,11 @@ void UseCaseAction::makeHovered(std::vector<CharacterCard*> cards, std::vector<C
 		for (auto& supportCard : supportCards) {
 			supportCard->makeCardUnhovered();
 		}
-	};
+		};
 
 	auto unhoverButton = [&]() {
 		button->makeButtonUnhovered();
-	};
+		};
 
 	unhoverAllCards();
 	unhoverButton();
@@ -479,6 +509,9 @@ void UseCaseAction::makeHovered(std::vector<CharacterCard*> cards, std::vector<C
 		break;
 	case elementDio:
 		cards[1]->makeCardHovered();
+		break;
+	case elementJoseph:
+		cards[2]->makeCardHovered();
 		break;
 	case elementJosuke:
 		supportCards[0]->makeCardHovered();
@@ -510,6 +543,8 @@ StandType UseCaseAction::getStandTypeByCharacterType(CharacterType type)
 		return starPlatinum;
 	case dio:
 		return theWorld;
+	case joseph:
+		return hermitPurple;
 	default:
 		return noneStand;
 	}

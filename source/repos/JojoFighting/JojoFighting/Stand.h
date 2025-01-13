@@ -24,6 +24,8 @@ public:
 	void makePunches();
 	void setOpponent(Character* opponent);
 
+	sf::RectangleShape getAsShape();
+
 private:
 	const float scaleToWindow = 3.3f;
 	const float punchSpeed = 20;
@@ -37,4 +39,6 @@ private:
 	sf::Clock clock;
 	ActionTexturesMap texturesMap;
 	ActionType currentAction;
+
+	int getPunchForceByStand();
 };

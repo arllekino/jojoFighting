@@ -89,6 +89,11 @@ void PollEvent::onEventGame(sf::RenderWindow& window, std::unordered_map<UserTyp
 		users[firstUser] = UserEvent::onCharacterStandAttackDown;
 		firstUserAction = true;
 	}
+	if (GetAsyncKeyState(VK_LSHIFT) & 0x8000 && GetAsyncKeyState('C') & 0x8000)
+	{
+		users[firstUser] = UserEvent::onMegaUlt;
+		firstUserAction = true;
+	}
 
 	checkGamePadGame(users[firstUser], firstUserAction, 0);
 
@@ -158,7 +163,6 @@ void PollEvent::onEventGame(sf::RenderWindow& window, std::unordered_map<UserTyp
 		users[secondUser] = UserEvent::onUpRight;
 		secondUserAction = true;
 	}
-
 	if (GetAsyncKeyState('K') & 0x8000 && GetAsyncKeyState('U') & 0x8000)
 	{
 		users[secondUser] = UserEvent::onCrouchPunchForward;
@@ -172,6 +176,11 @@ void PollEvent::onEventGame(sf::RenderWindow& window, std::unordered_map<UserTyp
 	if (GetAsyncKeyState(VK_RSHIFT) & 0x8000 && GetAsyncKeyState('O') & 0x8000)
 	{
 		users[secondUser] = UserEvent::onCharacterStandAttackDown;
+		secondUserAction = true;
+	}
+	if (GetAsyncKeyState(VK_RSHIFT) & 0x8000 && GetAsyncKeyState('N') & 0x8000)
+	{
+		users[secondUser] = UserEvent::onMegaUlt;
 		secondUserAction = true;
 	}
 

@@ -99,6 +99,7 @@ void AudioManager::initSounds()
 	soundsMap[jotaro][onHaha] = "assets/jotaro/sounds/yareYareDaze.wav";
 	soundsMap[jotaro][onTakeHit] = "assets/game/sounds/hitBody.wav";
 	soundsMap[jotaro][onGoing] = "assets/game/sounds/stepBoots.wav";
+	soundsMap[jotaro][onOraOra] = "assets/jotaro/sounds/OraOraOra.wav";
 
 	soundsMap[dio][onUlt] = "assets/dio/sounds/theWorld.wav";
 	soundsMap[dio][onCrouchPowerfulAttackForward] = "assets/dio/sounds/lightAttack.wav";
@@ -111,6 +112,19 @@ void AudioManager::initSounds()
 	soundsMap[dio][onHaha] = "assets/dio/sounds/mudamuda.wav";
 	soundsMap[dio][onTakeHit] = "assets/game/sounds/hitBody.wav";
 	soundsMap[dio][onGoing] = "assets/game/sounds/stepBoots.wav";
+	soundsMap[dio][onOraOra] = "assets/dio/sounds/MudaMudaMuda.wav";
+
+	soundsMap[joseph][onHaha] = "assets/joseph/sounds/omg.wav";
+	soundsMap[joseph][onCrouchPowerfulAttackForward] = "assets/joseph/sounds/crouchPowerfullAtk.wav";
+	soundsMap[joseph][onStandAttackUp] = "assets/joseph/sounds/standAttackup.wav";
+	soundsMap[joseph][onArmMediumAttack] = "assets/joseph/sounds/armMeduimAttack.wav";
+	soundsMap[joseph][onStandAttackDown] = "assets/joseph/sounds/standAttackDown.wav";
+	soundsMap[joseph][onCrouch] = "assets/joseph/sounds/crouch.wav";
+	soundsMap[joseph][onCrouchAttackForward] = "assets/joseph/sounds/crouchAttackForward.wav";
+	soundsMap[joseph][onCallSupport] = "assets/joseph/sounds/callSupport.wav";
+	soundsMap[joseph][onTakeHit] = "assets/joseph/sounds/takeHit.wav";
+	soundsMap[joseph][onOraOra] = "assets/joseph/sounds/hamon.wav";
+	soundsMap[joseph][onGoing] = "assets/game/sounds/stepBoots.wav";
 
 	menuMusicMap[left] = "assets/game/sounds/switch.wav";
 	menuMusicMap[right] = "assets/game/sounds/switch.wav";
@@ -125,4 +139,3 @@ void AudioManager::initMusic()
 	gameMusicMap[game] = "assets/game/music/MainGameMusic.wav";
 	gameMusicMap[menu] = "assets/game/music/aiaiai.wav";
 }
-

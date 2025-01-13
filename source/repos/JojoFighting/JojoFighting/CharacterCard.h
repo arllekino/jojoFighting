@@ -9,12 +9,12 @@
 class CharacterCard
 {
 public:
-	CharacterCard(CharacterType characterType, std::string path, std::string placeholderText);
+	CharacterCard(CharacterType characterType, std::string path, std::string placeholderText, sf::Color backgroundColorMask);
 	CharacterCard(SupportType supportType, std::string path, std::string placeholderText);
 	~CharacterCard();
 
 	sf::Vector2f getSize();
-	void setTextureByPath(std::string path, float cardScale);
+	void setTextureByPath(std::string path, float cardScale, sf::Color colorMask);
 	void setPosition(sf::Vector2f position);
 	sf::RectangleShape getCardAsRect();
 	sf::Text getPlaceholderText();

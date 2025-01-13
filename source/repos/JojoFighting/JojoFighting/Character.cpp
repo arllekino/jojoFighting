@@ -46,14 +46,13 @@ Character::Character(TextureManager* textureManager, CharacterType characterType
 	body.bodyShape.setScale(direction, 1);
 	body.bodyShape.setSize(startSize);
 	body.bodyShape.setOrigin(body.bodyShape.getGlobalBounds().width / 2, -body.bodyShape.getGlobalBounds().height / 16);
-	body.bodyShape.setOutlineColor(sf::Color::Green);
-	body.bodyShape.setOutlineThickness(2);
 
 	position = sf::Vector2f(newPosition.x, 1040);
 
 	support = new Support(supportType, textureManager, sf::Vector2f(startSize.x - 30, startSize.y - 100), sf::Vector2f(newPosition.x, newPosition.y + 100), direction);
 	audioManager = new AudioManager();
 	effect = new StopTimeEffect();
+	avatar = new Avatar(getAvatarPosByUserType(windowSize, user), textureManager, characterType, user);
 }
 
 Character::~Character()
@@ -61,6 +60,7 @@ Character::~Character()
 	delete effect;
 	delete support;
 	delete stand;
+	delete avatar;
 }
 
 Body Character::getBody()
@@ -75,7 +75,12 @@ int Character::getHp()
 
 sf::Vector2f Character::getPosition()
 {
-	return position;
+	return body.bodyShape.getPosition();
+}
+
+sf::Vector2f Character::getSize()
+{
+	return body.bodyShape.getSize();
 }
 
 CharacterType Character::getCharacterType()
@@ -108,6 +113,16 @@ bool Character::isTimeStoppedMethod()
 	return isTimeStopped;
 }
 
+bool Character::isStandVisible()
+{
+	return stand->isStandVisible();
+}
+
+bool Character::isDeadMethod()
+{
+	return isDead;
+}
+
 int Character::getMaxHp()
 {
 	return maxHp;
@@ -128,6 +143,11 @@ sf::CircleShape Character::getEffect()
 	return effect->getEffectAsShape();
 }
 
+sf::RectangleShape Character::getAvatar()
+{
+	return avatar->getAsShape();
+}
+
 float Character::getUltReadiness()
 {
 	auto progress = ultClock.getElapsedTime().asSeconds() / ultCoolDown.asSeconds();
@@ -135,10 +155,15 @@ float Character::getUltReadiness()
 	return progress < 1 ? progress : 1;
 }
 
+sf::RectangleShape Character::getStandAsShape()
+{
+	return stand->getAsShape();
+}
+
 void Character::checkAction(ActionType type, int direction, Character* opponent)
 {
 	stand->setOpponent(opponent);
-	if (isAtDeath)
+	if (hp <= 0)
 	{
 		currentAction = atDeath;
 		deadAction();
@@ -151,6 +176,22 @@ void Character::checkAction(ActionType type, int direction, Character* opponent)
 		if (!isTimeStopped)
 			return;
 	}
+
+	if (opponent->isDeadMethod())
+	{
+		if (currentAction != onWinCycle)
+			currentAction = onWin;
+		setWinAction();
+		if (!isWon)
+		{
+			clock.restart();
+			isWon = true;
+		}
+		return;
+	}
+
+	if (isStunned)
+		return;
 
 	effect->checkEffect();
 	if (isTimeStopped)
@@ -171,12 +212,16 @@ void Character::checkAction(ActionType type, int direction, Character* opponent)
 		this->onStay();
 
 	checkSound();
-	if (type != currentAction && (type == ActionType::onJump || !isJump))
+	if (type != currentAction && (type == ActionType::onJump || !isJump) && type != onOraOra && !isPunch)
 	{
 		isPunch = isActionPunch(type);
-
 		currentAction = type;
 		clock.restart();
+	}
+
+	if (isPunch)
+	{
+		onPunch(currentAction, opponent);
 	}
 
 	if (direction != 0)
@@ -185,32 +230,36 @@ void Character::checkAction(ActionType type, int direction, Character* opponent)
 	}
 
 	stand->checkAction(type, direction);
-	if (currentAction == onOraOra)
+	if (type == onOraOra && getUltReadiness() == 1)
+	{
 		stand->makePunches();
-	if (characterType == dio && hp < maxHp)
-		hp++;
+		ultClock.restart();
+		audioManager->playSound(characterType, onOraOra);
+	}
 }
 
 void Character::onStay()
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned)
 		return;
 
 	auto texturesCount = texturesMap[currentAction].size();
 
 	auto time = isTimeStopped ? startFreezTime.asSeconds() : clock.getElapsedTime().asSeconds();
+	if (texturesCount != 0)
+	{
+		int frameIndex = static_cast<int>(int(time * moveSpeed) % (texturesCount - 1));
+		auto newSize = texturesMap[currentAction][frameIndex].getSize();
 
-	int frameIndex = static_cast<int>(int(time * moveSpeed) % texturesCount);
-	auto newSize = texturesMap[currentAction][frameIndex].getSize();
-
-	body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
-	body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
-	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
+		body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
+		body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
+		body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
+	}
 }
 
 void Character::onGoing(float direction, sf::Vector2u fieldSize)
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned || currentAction == onWin || currentAction == onWinCycle || atDeathClock.getElapsedTime().asSeconds() < atDeathCoolDown.asSeconds())
 		return;
 
 	const float gap = 60;
@@ -237,7 +286,7 @@ void Character::onGoing(float direction, sf::Vector2u fieldSize)
 
 void Character::onJump(int direction)
 {
-	if (isTimeStopped)
+	if (isTimeStopped || isStunned || isPunch)
 		return;
 	if (!isJump)
 	{
@@ -273,13 +322,13 @@ void Character::onJump(int direction)
 	}
 	else
 		body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
-	
+
 	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
 }
 
 void Character::onPunch(ActionType actionType, Character* whosOnPunch)
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned)
 		return;
 
 	const int punchDeltaHp = 5;
@@ -319,6 +368,15 @@ void Character::onPunch(ActionType actionType, Character* whosOnPunch)
 
 void Character::takeDamage(ActionType action, int punchDirection, int deltaHp)
 {
+	if (atDeathClock.getElapsedTime().asSeconds() < atDeathCoolDown.asSeconds())
+		return;
+
+	if (isAtDeath)
+	{
+		isDead = true;
+		atDeathClock.restart();
+	}
+
 	if (!isTimeStopped)
 		audioManager->playSound(characterType, onTakeHit);
 
@@ -328,7 +386,6 @@ void Character::takeDamage(ActionType action, int punchDirection, int deltaHp)
 		setActionByAttack(action);
 	}
 
-	body.bodyShape.setOutlineColor(sf::Color::Red);
 	auto prevPosition = body.bodyShape.getPosition();
 	auto bodySize = body.bodyShape.getSize();
 
@@ -344,8 +401,9 @@ void Character::takeDamage(ActionType action, int punchDirection, int deltaHp)
 	if (hp < 0)
 	{
 		hp = 0;
+		if (!isAtDeath)
+			atDeathClock.restart();
 		isAtDeath = true;
-		//body.bodyShape.setPosition(deadPosition);
 	}
 
 	if (hp > maxHp)
@@ -354,7 +412,7 @@ void Character::takeDamage(ActionType action, int punchDirection, int deltaHp)
 
 void Character::onCrouch(ActionType action)
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned)
 		return;
 
 	auto texturesCount = texturesMap[currentAction].size();
@@ -371,7 +429,7 @@ void Character::onCrouch(ActionType action)
 
 void Character::onSummonStand(ActionType action)
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned)
 		return;
 
 	if (stand->isStandVisible())
@@ -394,15 +452,15 @@ void Character::onSummonStand(ActionType action)
 	}
 }
 
-void Character::onUlt(ActionType action, Character* otherCharacter, UltComponent* ultProgressBar)
+void Character::onUlt(Character* otherCharacter, UltComponent* ultProgressBar)
 {
-	if (isTimeStopped || isJump)
+	if (isTimeStopped || isJump || isStunned)
 		return;
 
 	if (getUltReadiness() < 1)
 		return;
 
-	audioManager->playSound(characterType, action);
+	audioManager->playSound(characterType, currentAction);
 	auto texturesCount = texturesMap[currentAction].size();
 
 	auto time = isTimeStopped ? freezeClock.getElapsedTime().asSeconds() : clock.getElapsedTime().asSeconds();
@@ -418,7 +476,8 @@ void Character::onUlt(ActionType action, Character* otherCharacter, UltComponent
 	{
 		freezeClock.restart();
 		audioManager->stopMusic();
-		effect->startEffect(body.bodyShape.getPosition());
+		if (characterType != joseph)
+			effect->startEffect(body.bodyShape.getPosition());
 		isEffectActive = true;
 		otherCharacter->getUlted(characterType);
 		ultProgressBar->reset();
@@ -442,7 +501,7 @@ void Character::getUlted(CharacterType byWho)
 
 void Character::onCallSupport()
 {
-	if (isTimeStopped)
+	if (isTimeStopped || atDeathClock.getElapsedTime().asSeconds() < atDeathCoolDown.asSeconds())
 		return;
 	audioManager->playSound(characterType, ActionType::onCallSupport);
 	support->onCallSupport();
@@ -523,16 +582,25 @@ void Character::setActionByAttack(ActionType action)
 		currentAction = onHitedTorsoDownUp;
 		break;
 	case onStandAttackDown:
+		isHitedNow = true;
+		currentAction = onHitedHeadDownUp;
 		break;
 	case onStandAttackCrouchingDown:
 		break;
 	case onStandAttackCrouchingUp:
 		break;
 	case onOraOra:
+
 		break;
 
 	default:
 		return;
+	}
+
+	if (isJump)
+	{
+		isHitedNow = true;
+		currentAction = onHitedInJump;
 	}
 
 	auto newSize = texturesMap[currentAction][0].getSize();
@@ -622,6 +690,7 @@ void Character::checkSound()
 	case onStandAttackCrouchingUp:
 		break;
 	case onOraOra:
+		audioManager->playSound(characterType, onOraOra);
 		break;
 	case onHitedHeadStraight:
 		break;
@@ -651,7 +720,7 @@ void Character::checkSound()
 
 void Character::onHaha(ActionType action)
 {
-	if (isTimeStopped)
+	if (isTimeStopped || isStunned)
 		return;
 
 	auto texturesCount = texturesMap[currentAction].size();
@@ -668,11 +737,14 @@ void Character::onHaha(ActionType action)
 	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
 }
 
+void Character::setPositionX(float newPosX)
+{
+	auto prevPosY = body.bodyShape.getPosition().y;
+	body.bodyShape.setPosition(newPosX, prevPosY);
+}
+
 void Character::deadAction()
 {
-	//if (isTimeStopped)
-		//return;
-
 	auto texturesCount = texturesMap[atDeath].size();
 	auto time = clock.getElapsedTime().asSeconds();
 	auto frameLivingTime = static_cast<int>(time * moveSpeed);
@@ -683,4 +755,57 @@ void Character::deadAction()
 	body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
 	body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
 	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
+}
+
+void Character::makeStunned()
+{
+	isStunned = true;
+}
+
+void Character::makeUnstunned()
+{
+	isStunned = false;
+}
+
+void Character::setWinAction()
+{
+	auto texturesCount = texturesMap[currentAction].size();
+	auto time = clock.getElapsedTime().asSeconds();
+	auto frameLivingTime = static_cast<int>(time * moveSpeed);
+
+	int frameIndex = 0;
+	if (frameLivingTime < texturesCount - 1 && currentAction == onWin) {
+		frameIndex = frameLivingTime;
+	}
+	else
+	{
+		if (currentAction != onWinCycle) {
+			currentAction = onWinCycle;
+			frameIndex = 0;
+		}
+		else
+		{
+			frameIndex = static_cast<int>(int(time * moveSpeed) % texturesCount);
+		}
+	}
+
+	auto newSize = texturesMap[currentAction][frameIndex].getSize();
+	body.bodyShape.setSize(sf::Vector2f(newSize.x, newSize.y) * scaleToWindow);
+	body.bodyShape.setPosition(position.x, position.y - newSize.y * scaleToWindow);
+	body.bodyShape.setTexture(&texturesMap[currentAction][frameIndex], true);
+}
+
+sf::Vector2f Character::getAvatarPosByUserType(sf::Vector2u windowSize, UserType userType)
+{
+	const float paddingX = 40;
+	const float paddingY = 50;
+
+	if (userType == firstUser)
+	{
+		return { paddingX, paddingY };
+	}
+	else
+	{
+		return { windowSize.x - paddingX, paddingY };
+	}
 }

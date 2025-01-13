@@ -147,6 +147,12 @@
     <ClCompile Include="Knife.cpp">
       <Filter>Исходные файлы\Drawable\Components</Filter>
     </ClCompile>
+    <ClCompile Include="FInishHim.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Avatar.cpp">
+      <Filter>Исходные файлы\Drawable\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JojoFightingMain.h">
@@ -228,6 +234,12 @@
       <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
     </ClInclude>
     <ClInclude Include="Knife.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FinishHim.h">
+      <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Avatar.h">
       <Filter>Исходные файлы\Файлы заголовков\Drawable\Components</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,447 @@
+2024-12-25T00:26:12+03:00>arlekin>yeetglhf@gmail.com>first commit
+:000000 100644 0000000 a79d4e0 A	source/repos/JojoFighting/JojoFighting/ActionPathMap.h
+:000000 100644 0000000 889eba5 A	source/repos/JojoFighting/JojoFighting/ActionTexturesMap.h
+:000000 100644 0000000 25ff659 A	source/repos/JojoFighting/JojoFighting/ActionType.h
+:000000 100644 0000000 00b91ad A	source/repos/JojoFighting/JojoFighting/AudioManager.cpp
+:000000 100644 0000000 65d7c3a A	source/repos/JojoFighting/JojoFighting/AudioManager.h
+:000000 100644 0000000 9b36833 A	source/repos/JojoFighting/JojoFighting/AudioMapSounds.h
+:000000 100644 0000000 1fbfd67 A	source/repos/JojoFighting/JojoFighting/AudioState.h
+:000000 100644 0000000 fe04081 A	source/repos/JojoFighting/JojoFighting/Body.h
+:000000 100644 0000000 4e5c9c1 A	source/repos/JojoFighting/JojoFighting/Character.cpp
+:000000 100644 0000000 c490d8a A	source/repos/JojoFighting/JojoFighting/Character.h
+:000000 100644 0000000 5a61521 A	source/repos/JojoFighting/JojoFighting/CharacterActionMap.h
+:000000 100644 0000000 f7e439c A	source/repos/JojoFighting/JojoFighting/CharacterCard.cpp
+:000000 100644 0000000 ec73535 A	source/repos/JojoFighting/JojoFighting/CharacterCard.h
+:000000 100644 0000000 7d77be8 A	source/repos/JojoFighting/JojoFighting/CharacterType.h
+:000000 100644 0000000 6c7e624 A	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.log
+:000000 100644 0000000 46b134b A	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/CL.command.1.tlog
+:000000 100644 0000000 ed00cbc A	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+:000000 100644 0000000 e69de29 A	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/unsuccessfulbuild
+:000000 100644 0000000 79dda02 A	source/repos/JojoFighting/JojoFighting/Debug/vc143.idb
+:000000 100644 0000000 85d76bc A	source/repos/JojoFighting/JojoFighting/Debug/vc143.pdb
+:000000 100644 0000000 aa884f9 A	source/repos/JojoFighting/JojoFighting/Drawable.cpp
+:000000 100644 0000000 b07e86b A	source/repos/JojoFighting/JojoFighting/Drawable.h
+:000000 100644 0000000 0f32350 A	source/repos/JojoFighting/JojoFighting/EffectProgressType.h
+:000000 100644 0000000 a520a05 A	source/repos/JojoFighting/JojoFighting/Game.cpp
+:000000 100644 0000000 4bcd4ec A	source/repos/JojoFighting/JojoFighting/Game.h
+:000000 100644 0000000 92835fc A	source/repos/JojoFighting/JojoFighting/GameState.h
+:000000 100644 0000000 fb8e9e8 A	source/repos/JojoFighting/JojoFighting/HealthBarCharacter.cpp
+:000000 100644 0000000 9d14227 A	source/repos/JojoFighting/JojoFighting/HealthBarCharacter.h
+:000000 100644 0000000 0abedfe A	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj
+:000000 100644 0000000 e3ba938 A	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj.filters
+:000000 100644 0000000 3b2b2bf A	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj.user
+:000000 100644 0000000 2c575bb A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.exe.recipe
+:000000 100644 0000000 d6e6663 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.ilk
+:000000 100644 0000000 941c647 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.log
+:000000 100644 0000000 dc9ea6b A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.command.1.tlog
+:000000 100644 0000000 13cc1fd A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.read.1.tlog
+:000000 100644 0000000 e3ae7b8 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.write.1.tlog
+:000000 100644 0000000 d5b8ae8 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/Cl.items.tlog
+:000000 100644 0000000 1110242 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+:000000 100644 0000000 9d99ada A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.command.1.tlog
+:000000 100644 0000000 f3d4aed A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.read.1.tlog
+:000000 100644 0000000 7d26a06 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.secondary.1.tlog
+:000000 100644 0000000 0c59846 A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.write.1.tlog
+:000000 100644 0000000 d41d46b A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/main.obj
+:000000 100644 0000000 829e69f A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/vc143.idb
+:000000 100644 0000000 614a62b A	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/vc143.pdb
+:000000 100644 0000000 b84aa08 A	source/repos/JojoFighting/JojoFighting/JojoFightingMain.cpp
+:000000 100644 0000000 e7a8407 A	source/repos/JojoFighting/JojoFighting/JojoFightingMain.h
+:000000 100644 0000000 49e85fe A	source/repos/JojoFighting/JojoFighting/Knife.cpp
+:000000 100644 0000000 b1f0dbd A	source/repos/JojoFighting/JojoFighting/Knife.h
+:000000 100644 0000000 aab819d A	source/repos/JojoFighting/JojoFighting/MenuElement.h
+:000000 100644 0000000 83c6af3 A	source/repos/JojoFighting/JojoFighting/MenuUserEvent.h
+:000000 100644 0000000 54f66f8 A	source/repos/JojoFighting/JojoFighting/PollEvent.cpp
+:000000 100644 0000000 61ccb2f A	source/repos/JojoFighting/JojoFighting/PollEvent.h
+:000000 100644 0000000 f1fa91b A	source/repos/JojoFighting/JojoFighting/Stand.cpp
+:000000 100644 0000000 2db7254 A	source/repos/JojoFighting/JojoFighting/Stand.h
+:000000 100644 0000000 21f3e39 A	source/repos/JojoFighting/JojoFighting/StandActionMap.h
+:000000 100644 0000000 d242feb A	source/repos/JojoFighting/JojoFighting/StandType.h
+:000000 100644 0000000 5f815e6 A	source/repos/JojoFighting/JojoFighting/StartGameButton.cpp
+:000000 100644 0000000 484b606 A	source/repos/JojoFighting/JojoFighting/StartGameButton.h
+:000000 100644 0000000 e66d8cf A	source/repos/JojoFighting/JojoFighting/StopTimeEffect.cpp
+:000000 100644 0000000 830683b A	source/repos/JojoFighting/JojoFighting/StopTimeEffect.h
+:000000 100644 0000000 fa58a2c A	source/repos/JojoFighting/JojoFighting/Support.cpp
+:000000 100644 0000000 3d60f41 A	source/repos/JojoFighting/JojoFighting/Support.h
+:000000 100644 0000000 5cd5a21 A	source/repos/JojoFighting/JojoFighting/SupportType.h
+:000000 100644 0000000 8f03114 A	source/repos/JojoFighting/JojoFighting/TextureManager.cpp
+:000000 100644 0000000 7d1423d A	source/repos/JojoFighting/JojoFighting/TextureManager.h
+:000000 100644 0000000 97acc81 A	source/repos/JojoFighting/JojoFighting/TimerComponent.cpp
+:000000 100644 0000000 5c3e793 A	source/repos/JojoFighting/JojoFighting/TimerComponent.h
+:000000 100644 0000000 8cde19c A	source/repos/JojoFighting/JojoFighting/UltComponent.cpp
+:000000 100644 0000000 6d95060 A	source/repos/JojoFighting/JojoFighting/UltComponent.h
+:000000 100644 0000000 010fc8e A	source/repos/JojoFighting/JojoFighting/UseCaseAction.cpp
+:000000 100644 0000000 07c6ac7 A	source/repos/JojoFighting/JojoFighting/UseCaseAction.h
+:000000 100644 0000000 6e688ad A	source/repos/JojoFighting/JojoFighting/UserEvent.h
+:000000 100644 0000000 1871ca8 A	source/repos/JojoFighting/JojoFighting/UserType.h
+:000000 100644 0000000 063fb0a A	source/repos/JojoFighting/JojoFighting/assets/cat.png
+:000000 100644 0000000 15c7b3f A	source/repos/JojoFighting/JojoFighting/assets/dio/DioAttackHighLeg.png
+:000000 100644 0000000 13396d2 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioBrando.png
+:000000 100644 0000000 72fa801 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouch.png
+:000000 100644 0000000 8f75b57 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouchAttackForward.png
+:000000 100644 0000000 dccfca2 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouchAttackup.png
+:000000 100644 0000000 4f03b5a A	source/repos/JojoFighting/JojoFighting/assets/dio/DioGoingForward.png
+:000000 100644 0000000 63a708e A	source/repos/JojoFighting/JojoFighting/assets/dio/DioHaha.png
+:000000 100644 0000000 3d7b45f A	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedHeadStraight.png
+:000000 100644 0000000 50499bc A	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedLegStraight.png
+:000000 100644 0000000 f5497b4 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedTorsoDownUp.png
+:000000 100644 0000000 596e6fb A	source/repos/JojoFighting/JojoFighting/assets/dio/DioJump.png
+:000000 100644 0000000 1439b70 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioMediumArmAttack.png
+:000000 100644 0000000 938d080 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioPreviewCard.png
+:000000 100644 0000000 f4a6aa0 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioStandAttackUp.png
+:000000 100644 0000000 b5923b8 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioStay.png
+:000000 100644 0000000 8060d3b A	source/repos/JojoFighting/JojoFighting/assets/dio/DioSummonStand.png
+:000000 100644 0000000 552c763 A	source/repos/JojoFighting/JojoFighting/assets/dio/DioTheWorld.png
+:000000 100644 0000000 14ad833 A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda1.png
+:000000 100644 0000000 1e372a0 A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda2.png
+:000000 100644 0000000 210e96c A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda3.png
+:000000 100644 0000000 7c47f9d A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda4.png
+:000000 100644 0000000 c060ba0 A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda5.png
+:000000 100644 0000000 c55d7f9 A	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldStay.png
+:000000 100644 0000000 ee3f769 A	source/repos/JojoFighting/JojoFighting/assets/dio/knife.png
+:000000 100644 0000000 98bdd24 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/attack.wav
+:000000 100644 0000000 7b8c119 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/corroy.wav
+:000000 100644 0000000 f8467f5 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/crouch.wav
+:000000 100644 0000000 6358e8c A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/killer-queen-bite-the-dust-sound-effect-made-with-Voicemod.wav
+:000000 100644 0000000 3724cfb A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/legAttack.wav
+:000000 100644 0000000 bb8f3fb A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/lightAttack.wav
+:000000 100644 0000000 159e548 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/mudamuda.wav
+:000000 100644 0000000 6314041 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/superAttack.wav
+:000000 100644 0000000 700cd8f A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/takeDamage.wav
+:000000 100644 0000000 e86619e A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/theWorld.wav
+:000000 100644 0000000 24e23c1 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/theWorldTokiwa.wav
+:000000 100644 0000000 d74fc01 A	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/wryy.wav
+:000000 100644 0000000 c8d2665 A	source/repos/JojoFighting/JojoFighting/assets/game/CairoStreet.jpg
+:000000 100644 0000000 438c449 A	source/repos/JojoFighting/JojoFighting/assets/game/fonts/Bangers-Regular.ttf
+:000000 100644 0000000 0707e15 A	source/repos/JojoFighting/JojoFighting/assets/game/fonts/Roboto-Medium.ttf
+:000000 100644 0000000 399f303 A	source/repos/JojoFighting/JojoFighting/assets/game/menuBackground.jpg
+:000000 100644 0000000 6c75506 A	source/repos/JojoFighting/JojoFighting/assets/game/music/MainGameMusic.wav
+:000000 100644 0000000 51bc359 A	source/repos/JojoFighting/JojoFighting/assets/game/music/Overdrive.wav
+:000000 100644 0000000 afdc83f A	source/repos/JojoFighting/JojoFighting/assets/game/music/aiaiai.wav
+:000000 100644 0000000 a1f3330 A	source/repos/JojoFighting/JojoFighting/assets/game/sounds/hitBody.wav
+:000000 100644 0000000 79434ab A	source/repos/JojoFighting/JojoFighting/assets/game/sounds/select.wav
+:000000 100644 0000000 99e104c A	source/repos/JojoFighting/JojoFighting/assets/game/sounds/start.wav
+:000000 100644 0000000 baf9a3e A	source/repos/JojoFighting/JojoFighting/assets/game/sounds/stepBoots.wav
+:000000 100644 0000000 bcfe278 A	source/repos/JojoFighting/JojoFighting/assets/game/sounds/switch.wav
+:000000 100644 0000000 0b2a439 A	source/repos/JojoFighting/JojoFighting/assets/josuke/2q4tub3kpy421.webp
+:000000 100644 0000000 03bd589 A	source/repos/JojoFighting/JojoFighting/assets/josuke/KakyoinWithStand.webp
+:000000 100644 0000000 b1759d0 A	source/repos/JojoFighting/JojoFighting/assets/josuke/josuke.png
+:000000 100644 0000000 35aa384 A	source/repos/JojoFighting/JojoFighting/assets/josuke/preview.png
+:000000 100644 0000000 fecc812 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroAtDeath.png
+:000000 100644 0000000 4b404c3 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouch.png
+:000000 100644 0000000 cc01e21 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouchAttackForward.png
+:000000 100644 0000000 9e63b66 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouchPowerfulAttack.png
+:000000 100644 0000000 48d5a9a A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroGetArmMediumAttack.png
+:000000 100644 0000000 4c80596 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroGoingForward.png
+:000000 100644 0000000 746c400 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHaha.png
+:000000 100644 0000000 57f3e59 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHitedLegStraight.png
+:000000 100644 0000000 7b45499 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHitedTorsoDownUp.png
+:000000 100644 0000000 49741c0 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroJump.png
+:000000 100644 0000000 3e9ad4f A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroKujo.png
+:000000 100644 0000000 c0e64f2 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroMediumArmAttack.png
+:000000 100644 0000000 d4c41eb A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroPreviewCard.png
+:000000 100644 0000000 3238a90 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandAttackDown.png
+:000000 100644 0000000 6d80ac4 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandAttackUp.png
+:000000 100644 0000000 430ffd7 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandStay.png
+:000000 100644 0000000 ae73d15 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandingFromCrouch.png
+:000000 100644 0000000 c759764 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStay.png
+:000000 100644 0000000 86bf7bf A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroSummonStand.png
+:000000 100644 0000000 8395da7 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroTheWolrd.png
+:000000 100644 0000000 5ac9e59 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra1.png
+:000000 100644 0000000 2f4700d A	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra2.png
+:000000 100644 0000000 1437794 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra3.png
+:000000 100644 0000000 df780cd A	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra4.png
+:000000 100644 0000000 c31b91d A	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra5.png
+:000000 100644 0000000 6748bd1 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/crouch.wav
+:000000 100644 0000000 03155e4 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/kakyoin.wav
+:000000 100644 0000000 8af5fd5 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/lightAttack.wav
+:000000 100644 0000000 92689f9 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/lightAttack1.wav
+:000000 100644 0000000 75de183 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/oneOra.wav
+:000000 100644 0000000 4fadbb3 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/oraOraLight.wav
+:000000 100644 0000000 8af5fd5 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/sigh.wav
+:000000 100644 0000000 e23be8f A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/starPlatinumTheWorld.wav
+:000000 100644 0000000 0c33c1e A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/superOra.wav
+:000000 100644 0000000 1ecd883 A	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/yareYareDaze.wav
+:000000 100644 0000000 d055be8 A	source/repos/JojoFighting/JojoFighting/assets/kakyoin/kakyoin.png
+:000000 100644 0000000 a3ce56d A	source/repos/JojoFighting/JojoFighting/assets/kakyoin/preview.png
+:000000 100644 0000000 fe0e86e A	source/repos/JojoFighting/JojoFighting/assets/kira/kira.png
+:000000 100644 0000000 b30e2c2 A	source/repos/JojoFighting/JojoFighting/assets/kira/preview.png
+:000000 100644 0000000 230fd1e A	source/repos/JojoFighting/JojoFighting/assets/red_pointer.png
+:000000 100644 0000000 e69de29 A	source/repos/JojoFighting/JojoFighting/log.txt
+:000000 100644 0000000 ac772bc A	source/repos/JojoFighting/JojoFighting/main.cpp
+:000000 100644 0000000 7760c05 A	source/repos/JojoFighting/JojoFighting/openal32.dll
+:000000 100644 0000000 a180800 A	source/repos/JojoFighting/JojoFighting/sfml-audio-2.dll
+:000000 100644 0000000 7d8b792 A	source/repos/JojoFighting/JojoFighting/sfml-audio-d-2.dll
+:000000 100644 0000000 af9c6db A	source/repos/JojoFighting/JojoFighting/sfml-graphics-2.dll
+:000000 100644 0000000 20eef4d A	source/repos/JojoFighting/JojoFighting/sfml-graphics-d-2.dll
+:000000 100644 0000000 a98f743 A	source/repos/JojoFighting/JojoFighting/sfml-network-2.dll
+:000000 100644 0000000 708fc71 A	source/repos/JojoFighting/JojoFighting/sfml-network-d-2.dll
+:000000 100644 0000000 db1fc19 A	source/repos/JojoFighting/JojoFighting/sfml-system-2.dll
+:000000 100644 0000000 1d40345 A	source/repos/JojoFighting/JojoFighting/sfml-system-d-2.dll
+:000000 100644 0000000 025e525 A	source/repos/JojoFighting/JojoFighting/sfml-window-2.dll
+:000000 100644 0000000 450c67b A	source/repos/JojoFighting/JojoFighting/sfml-window-d-2.dll
+:000000 100644 0000000 a39b137 A	source/repos/JojoFighting/JojoFighting/x64/Debug/ActionTexturesMap.obj
+:000000 100644 0000000 886a89c A	source/repos/JojoFighting/JojoFighting/x64/Debug/AudioManager.obj
+:000000 100644 0000000 7bfd3e2 A	source/repos/JojoFighting/JojoFighting/x64/Debug/Body.obj
+:000000 100644 0000000 8237038 A	source/repos/JojoFighting/JojoFighting/x64/Debug/Character.obj
+:000000 100644 0000000 ed692ae A	source/repos/JojoFighting/JojoFighting/x64/Debug/CharacterCard.obj
+:000000 100644 0000000 2e1cd9f A	source/repos/JojoFighting/JojoFighting/x64/Debug/Drawable.obj
+:000000 100644 0000000 55417c7 A	source/repos/JojoFighting/JojoFighting/x64/Debug/Game.obj
+:000000 100644 0000000 543fce3 A	source/repos/JojoFighting/JojoFighting/x64/Debug/HealthBarCharacter.obj
+:000000 100644 0000000 1ab71db A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.Build.CppClean.log
+:000000 100644 0000000 82a938b A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.exe.recipe
+:000000 100644 0000000 d8e2a31 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.ilk
+:000000 100644 0000000 22d1f8a A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.log
+:000000 100644 0000000 2697d13 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.command.1.tlog
+:000000 100644 0000000 0fa6a80 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.read.1.tlog
+:000000 100644 0000000 99f49d4 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.write.1.tlog
+:000000 100644 0000000 55b858a A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/Cl.items.tlog
+:000000 100644 0000000 9cb4cd5 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+:000000 100644 0000000 d1607d8 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.command.1.tlog
+:000000 100644 0000000 43e2d90 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.read.1.tlog
+:000000 100644 0000000 de0b4ab A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.secondary.1.tlog
+:000000 100644 0000000 e248893 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.write.1.tlog
+:000000 100644 0000000 e69de29 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.vcxproj.FileListAbsolute.txt
+:000000 100644 0000000 d449729 A	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFightingMain.obj
+:000000 100644 0000000 52dee59 A	source/repos/JojoFighting/JojoFighting/x64/Debug/Knife.obj
+:000000 100644 0000000 7c3c610 A	source/repos/JojoFighting/JojoFighting/x64/Debug/PollEvent.obj
+:000000 100644 0000000 5c4980d A	source/repos/JojoFighting/JojoFighting/x64/Debug/Stand.obj
+:000000 100644 0000000 9e7a87e A	source/repos/JojoFighting/JojoFighting/x64/Debug/StandActionMap.obj
+:000000 100644 0000000 10ba95c A	source/repos/JojoFighting/JojoFighting/x64/Debug/StartGameButton.obj
+:000000 100644 0000000 1bfbaa8 A	source/repos/JojoFighting/JojoFighting/x64/Debug/StopTimeEffect.obj
+:000000 100644 0000000 2b53ce6 A	source/repos/JojoFighting/JojoFighting/x64/Debug/Support.obj
+:000000 100644 0000000 ac820ab A	source/repos/JojoFighting/JojoFighting/x64/Debug/TextureManager.obj
+:000000 100644 0000000 50645e1 A	source/repos/JojoFighting/JojoFighting/x64/Debug/TimerComponent.obj
+:000000 100644 0000000 199324a A	source/repos/JojoFighting/JojoFighting/x64/Debug/UltComponent.obj
+:000000 100644 0000000 a595283 A	source/repos/JojoFighting/JojoFighting/x64/Debug/UseCaseAction.obj
+:000000 100644 0000000 4e851ea A	source/repos/JojoFighting/JojoFighting/x64/Debug/main.obj
+:000000 100644 0000000 e3f160b A	source/repos/JojoFighting/JojoFighting/x64/Debug/vc143.idb
+:000000 100644 0000000 25ce502 A	source/repos/JojoFighting/JojoFighting/x64/Debug/vc143.pdb
+:000000 100644 0000000 6c7e624 A	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.log
+:000000 100644 0000000 46b134b A	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/CL.command.1.tlog
+:000000 100644 0000000 852fca8 A	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/JojoFighting.lastbuildstate
+:000000 100644 0000000 e69de29 A	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/unsuccessfulbuild
+:000000 100644 0000000 5c523e6 A	source/repos/JojoFighting/JojoFighting/x64/Release/vc143.pdb
+6	0	source/repos/JojoFighting/JojoFighting/ActionPathMap.h
+5	0	source/repos/JojoFighting/JojoFighting/ActionTexturesMap.h
+44	0	source/repos/JojoFighting/JojoFighting/ActionType.h
+128	0	source/repos/JojoFighting/JojoFighting/AudioManager.cpp
+47	0	source/repos/JojoFighting/JojoFighting/AudioManager.h
+10	0	source/repos/JojoFighting/JojoFighting/AudioMapSounds.h
+8	0	source/repos/JojoFighting/JojoFighting/AudioState.h
+10	0	source/repos/JojoFighting/JojoFighting/Body.h
+686	0	source/repos/JojoFighting/JojoFighting/Character.cpp
+114	0	source/repos/JojoFighting/JojoFighting/Character.h
+10	0	source/repos/JojoFighting/JojoFighting/CharacterActionMap.h
+129	0	source/repos/JojoFighting/JojoFighting/CharacterCard.cpp
+39	0	source/repos/JojoFighting/JojoFighting/CharacterCard.h
+8	0	source/repos/JojoFighting/JojoFighting/CharacterType.h
+2	0	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.log
+1	0	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/CL.command.1.tlog
+2	0	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+0	0	source/repos/JojoFighting/JojoFighting/Debug/JojoFighting.tlog/unsuccessfulbuild
+-	-	source/repos/JojoFighting/JojoFighting/Debug/vc143.idb
+-	-	source/repos/JojoFighting/JojoFighting/Debug/vc143.pdb
+146	0	source/repos/JojoFighting/JojoFighting/Drawable.cpp
+37	0	source/repos/JojoFighting/JojoFighting/Drawable.h
+8	0	source/repos/JojoFighting/JojoFighting/EffectProgressType.h
+188	0	source/repos/JojoFighting/JojoFighting/Game.cpp
+71	0	source/repos/JojoFighting/JojoFighting/Game.h
+7	0	source/repos/JojoFighting/JojoFighting/GameState.h
+37	0	source/repos/JojoFighting/JojoFighting/HealthBarCharacter.cpp
+21	0	source/repos/JojoFighting/JojoFighting/HealthBarCharacter.h
+194	0	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj
+234	0	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj.filters
+9	0	source/repos/JojoFighting/JojoFighting/JojoFighting.vcxproj.user
+11	0	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.exe.recipe
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.ilk
+2	0	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.log
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.command.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.read.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.write.1.tlog
+1	0	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/Cl.items.tlog
+2	0	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.command.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.read.1.tlog
+2	0	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.secondary.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.write.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/main.obj
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/vc143.idb
+-	-	source/repos/JojoFighting/JojoFighting/JojoFighting/x64/Debug/vc143.pdb
+32	0	source/repos/JojoFighting/JojoFighting/JojoFightingMain.cpp
+3	0	source/repos/JojoFighting/JojoFighting/JojoFightingMain.h
+27	0	source/repos/JojoFighting/JojoFighting/Knife.cpp
+20	0	source/repos/JojoFighting/JojoFighting/Knife.h
+12	0	source/repos/JojoFighting/JojoFighting/MenuElement.h
+11	0	source/repos/JojoFighting/JojoFighting/MenuUserEvent.h
+337	0	source/repos/JojoFighting/JojoFighting/PollEvent.cpp
+22	0	source/repos/JojoFighting/JojoFighting/PollEvent.h
+114	0	source/repos/JojoFighting/JojoFighting/Stand.cpp
+40	0	source/repos/JojoFighting/JojoFighting/Stand.h
+10	0	source/repos/JojoFighting/JojoFighting/StandActionMap.h
+8	0	source/repos/JojoFighting/JojoFighting/StandType.h
+51	0	source/repos/JojoFighting/JojoFighting/StartGameButton.cpp
+26	0	source/repos/JojoFighting/JojoFighting/StartGameButton.h
+72	0	source/repos/JojoFighting/JojoFighting/StopTimeEffect.cpp
+27	0	source/repos/JojoFighting/JojoFighting/StopTimeEffect.h
+203	0	source/repos/JojoFighting/JojoFighting/Support.cpp
+49	0	source/repos/JojoFighting/JojoFighting/Support.h
+9	0	source/repos/JojoFighting/JojoFighting/SupportType.h
+240	0	source/repos/JojoFighting/JojoFighting/TextureManager.cpp
+48	0	source/repos/JojoFighting/JojoFighting/TextureManager.h
+44	0	source/repos/JojoFighting/JojoFighting/TimerComponent.cpp
+24	0	source/repos/JojoFighting/JojoFighting/TimerComponent.h
+47	0	source/repos/JojoFighting/JojoFighting/UltComponent.cpp
+21	0	source/repos/JojoFighting/JojoFighting/UltComponent.h
+516	0	source/repos/JojoFighting/JojoFighting/UseCaseAction.cpp
+72	0	source/repos/JojoFighting/JojoFighting/UseCaseAction.h
+21	0	source/repos/JojoFighting/JojoFighting/UserEvent.h
+8	0	source/repos/JojoFighting/JojoFighting/UserType.h
+-	-	source/repos/JojoFighting/JojoFighting/assets/cat.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioAttackHighLeg.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioBrando.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouch.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouchAttackForward.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioCrouchAttackup.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioGoingForward.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioHaha.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedHeadStraight.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedLegStraight.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioHitedTorsoDownUp.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioJump.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioMediumArmAttack.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioPreviewCard.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioStandAttackUp.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioStay.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioSummonStand.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/DioTheWorld.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda1.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda2.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda3.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda4.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldMuda5.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/TheWorldStay.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/knife.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/attack.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/corroy.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/crouch.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/killer-queen-bite-the-dust-sound-effect-made-with-Voicemod.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/legAttack.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/lightAttack.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/mudamuda.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/superAttack.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/takeDamage.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/theWorld.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/theWorldTokiwa.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/dio/sounds/wryy.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/CairoStreet.jpg
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/fonts/Bangers-Regular.ttf
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/fonts/Roboto-Medium.ttf
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/menuBackground.jpg
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/music/MainGameMusic.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/music/Overdrive.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/music/aiaiai.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/sounds/hitBody.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/sounds/select.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/sounds/start.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/sounds/stepBoots.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/game/sounds/switch.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/josuke/2q4tub3kpy421.webp
+-	-	source/repos/JojoFighting/JojoFighting/assets/josuke/KakyoinWithStand.webp
+-	-	source/repos/JojoFighting/JojoFighting/assets/josuke/josuke.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/josuke/preview.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroAtDeath.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouch.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouchAttackForward.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroCrouchPowerfulAttack.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroGetArmMediumAttack.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroGoingForward.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHaha.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHitedLegStraight.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroHitedTorsoDownUp.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroJump.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroKujo.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroMediumArmAttack.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroPreviewCard.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandAttackDown.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandAttackUp.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandStay.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStandingFromCrouch.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroStay.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroSummonStand.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/JotaroTheWolrd.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra1.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra2.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra3.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra4.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/StarPlatinumOra5.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/crouch.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/kakyoin.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/lightAttack.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/lightAttack1.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/oneOra.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/oraOraLight.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/sigh.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/starPlatinumTheWorld.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/superOra.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/jotaro/sounds/yareYareDaze.wav
+-	-	source/repos/JojoFighting/JojoFighting/assets/kakyoin/kakyoin.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/kakyoin/preview.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/kira/kira.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/kira/preview.png
+-	-	source/repos/JojoFighting/JojoFighting/assets/red_pointer.png
+0	0	source/repos/JojoFighting/JojoFighting/log.txt
+7	0	source/repos/JojoFighting/JojoFighting/main.cpp
+-	-	source/repos/JojoFighting/JojoFighting/openal32.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-audio-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-audio-d-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-graphics-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-graphics-d-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-network-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-network-d-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-system-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-system-d-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-window-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/sfml-window-d-2.dll
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/ActionTexturesMap.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/AudioManager.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Body.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Character.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/CharacterCard.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Drawable.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Game.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/HealthBarCharacter.obj
+19	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.Build.CppClean.log
+11	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.exe.recipe
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.ilk
+378	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.log
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.command.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.read.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/CL.write.1.tlog
+25	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/Cl.items.tlog
+2	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/JojoFighting.lastbuildstate
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.command.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.read.1.tlog
+2	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.secondary.1.tlog
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.tlog/link.write.1.tlog
+0	0	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFighting.vcxproj.FileListAbsolute.txt
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/JojoFightingMain.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Knife.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/PollEvent.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Stand.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/StandActionMap.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/StartGameButton.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/StopTimeEffect.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/Support.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/TextureManager.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/TimerComponent.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/UltComponent.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/UseCaseAction.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/main.obj
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/vc143.idb
+-	-	source/repos/JojoFighting/JojoFighting/x64/Debug/vc143.pdb
+2	0	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.log
+1	0	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/CL.command.1.tlog
+2	0	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/JojoFighting.lastbuildstate
+0	0	source/repos/JojoFighting/JojoFighting/x64/Release/JojoFighting.tlog/unsuccessfulbuild
+-	-	source/repos/JojoFighting/JojoFighting/x64/Release/vc143.pdb

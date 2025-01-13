@@ -14,7 +14,7 @@ public:
 	void reset();
 
 private:
-	const sf::Vector2f startSize = { 500, 30 };
+	const sf::Vector2f startSize = { 300, 15 };
 	
 	sf::RectangleShape wrapper;
 	sf::RectangleShape shape;
